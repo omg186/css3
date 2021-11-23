@@ -1,0 +1,22 @@
+@keyframes spinloading {
+  from {
+    transform: translateY(0deg);
+  }
+  to {
+    transform: translateY(360deg);
+  }
+}
+@-webkit-keyframes spinloading {
+  from {
+    transform: translateY(0deg);
+  }
+  to {
+    transform: translateY(360deg);
+  }
+}
+
+.dc-loading {
+  @apply border-t-4 border-yellow-400 border-solid rounded-full;
+  animation: spinloading 3s infinite alternate;
+  -webkit-animation: spinloading 3s infinite alternate;
+}

@@ -1,0 +1,35 @@
+.dc-loading {
+  border: 3px solid transparent;
+  border-top-color: rgba(228, 231, 37, 0.5);
+  @apply relative rounded-full h-20 w-20;
+  animation: spinloading 2s linear infinite;
+}
+.dc-loading::before {
+  content: "";
+  border: 3px solid transparent;
+  border-top-color: rgba(201, 33, 69, 0.5);
+  @apply absolute top-1 left-1 right-1 bottom-1 rounded-full;
+  /* position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50%;
+  background-color: #fff; */
+  animation: spinloading 3s linear infinite;
+}
+.dc-loading::after {
+  content: "";
+  border: 3px solid transparent;
+  border-top-color: rgba(59, 130, 246, 0.5);
+  @apply absolute top-2 left-2 right-2 bottom-2 rounded-full;
+  animation: spinloading 2s linear infinite;
+}
+@keyframes spinloading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
