@@ -46,5 +46,6 @@
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript-plugin-css-modules": "^3.4.0"
-  }
+  },
+  "homepage": "https://github.com/omg186/css3"
 }
