@@ -26,7 +26,7 @@ function App() {
         <div className="rounded-2xl bg-pink-300 bg-opacity-50 flex justify-center items-center">
           <LoadingFirst></LoadingFirst>
         </div>
-        <div className="rounded-2xl bg-black bg-opacity-60 flex justify-center items-center">
+        <div className="rounded-2xl bg-gray-400 bg-opacity-60 flex justify-center items-center">
           <GradientButton></GradientButton>
         </div>
       </div>
