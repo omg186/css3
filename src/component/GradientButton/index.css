@@ -1,0 +1,32 @@
+@keyframes gradiendanim {
+  100% {
+    background-position: -400% 0;
+  }
+}
+.gradient-button {
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: medium; /* 背景渐变色 */
+  /* 让前后颜色保持统一，要不然会出现诡异情况 */
+  @apply bg-gradient-to-r from-blue-500 via-red-600 to-blue-500;
+  @apply font-mono tracking-wide rounded-3xl p-2;
+  background-size: 400%;
+  animation: gradiendanim 15s infinite;
+  position: relative;
+  z-index: 1;
+}
+/* 增加发光效果 需要用到相对定位 发光是在元素的周围，需要定位到元素的 四周*/
+.gradient-button::before {
+  content: "";
+  /* 层级定位 */
+  z-index: -1;
+  @apply absolute -top-2 -right-2 -bottom-2 -left-2;
+  /* 跟父元素保持一致 圆角 背景渐变 */
+  @apply rounded-3xl;
+  @apply bg-gradient-to-r from-blue-500 via-red-600 to-blue-500;
+  background-size: 400%;
+  filter: blur(20px);
+  animation: gradiendanim 15s infinite;
+}
