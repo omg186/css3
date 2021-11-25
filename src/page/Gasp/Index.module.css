@@ -2,3 +2,24 @@
   @apply h-32 w-32 text-white bg-green-600 flex items-center justify-center;
   @apply uppercase text-center;
 }
+.circle {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: 0;
+}
+.sm {
+  width: 30px;
+  height: 30px;
+}
+.md {
+  width: 60px;
+  height: 60px;
+}
+
+.lg {
+  width: 90px;
+  height: 90px;
+}

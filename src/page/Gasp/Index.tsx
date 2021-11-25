@@ -1,8 +1,9 @@
 import { gsap } from 'gsap'
 import { useLayoutEffect, useRef } from 'react'
+import ComponentCommunication from './ComponentCommunication/Index'
 import styles from './Index.module.css'
+import MouseMoveTo from './MouseMoveTo/Index'
 import ReactingToChanges from './ReactingToChanges/Index'
-import RefTimeLinePage from './RefTimeLine/Index'
 const GsapPage = () => {
   const boxRef = useRef<HTMLDivElement>(null)
   // 获取节点下的所有子节点
@@ -29,8 +30,10 @@ const GsapPage = () => {
         <div className={`${styles.box} childer  rounded-3xl`}>HELLOW</div>
         <div className={`${styles.box} childer rounded-3xl`}>BOX</div>
       </div>
-      <RefTimeLinePage></RefTimeLinePage>
+      <ComponentCommunication></ComponentCommunication>
+      {/* <RefTimeLinePage></RefTimeLinePage> */}
       <ReactingToChanges />
+      <MouseMoveTo></MouseMoveTo>
     </div>
   )
 }

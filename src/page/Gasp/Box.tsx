@@ -1,6 +1,6 @@
 import { PropsWithChildren, useEffect, useRef } from 'react'
 import { PropsTimeLine } from './interface'
-
+import styles from './Index.module.css'
 function Box({ children, timeline, index }: PropsWithChildren<PropsTimeLine>) {
   const el = useRef<HTMLDivElement>(null)
   // add 'left 100px' animation to timeline
@@ -9,7 +9,7 @@ function Box({ children, timeline, index }: PropsWithChildren<PropsTimeLine>) {
   }, [timeline, index])
 
   return (
-    <div className='box' ref={el}>
+    <div className={`${styles.box} box rounded-3xl`} ref={el}>
       {children}
     </div>
   )
