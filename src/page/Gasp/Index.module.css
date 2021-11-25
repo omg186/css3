@@ -1,4 +1,4 @@
 .box {
   @apply h-32 w-32 text-white bg-green-600 flex items-center justify-center;
-  @apply uppercase;
+  @apply uppercase text-center;
 }
