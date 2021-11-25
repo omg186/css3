@@ -17,7 +17,8 @@ const RefTimeLinePage = () => {
   // reversed变化都会执行
   useEffect(() => {
     gsap.to(qchilder('.box2'), { rotation: '+=360', x: reversed ? 100 : 0 })
-  }, [qchilder, reversed])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reversed])
   useEffect(() => {
     tl.current?.reversed(reversed)
   }, [reversed])

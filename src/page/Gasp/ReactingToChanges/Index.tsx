@@ -24,9 +24,9 @@ const ReactingToChanges = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   // 每次重新渲染都让 box-3执行一次
-  useEffect(() => {
-    gsap.to(q('.box-3'), { rotation: '+=360' })
-  })
+  //   useEffect(() => {
+  //     gsap.to(q('.box-3'), { rotation: '+=360' })
+  //   })
   return (
     <div
       className={'reacting-to-changes flex flex-col gap-5 items-center'}
@@ -48,7 +48,7 @@ const ReactingToChanges = () => {
       <div className={`${styles.box} rounded-3xl box-2`}>
         First render & prop change
       </div>
-      <div className={`${styles.box} rounded-3xl box-3`}>Every render</div>
+      {/* <div className={`${styles.box} rounded-3xl box-3`}>Every render</div> */}
     </div>
   )
 }
