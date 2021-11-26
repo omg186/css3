@@ -47,6 +47,9 @@
     "autoprefixer": "^9",
     "postcss": "^7",
     "postcss-cssnext": "^3.1.1",
+    "svg-sprite-loader": "^6.0.11",
+    "svgo": "^2.8.0",
+    "svgo-loader": "^3.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript-plugin-css-modules": "^3.4.0"
   },

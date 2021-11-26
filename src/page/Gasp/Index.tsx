@@ -1,9 +1,11 @@
 import { gsap } from 'gsap'
+// import GSDevTools from 'gsap/GSDevTools'
 import { useLayoutEffect, useRef } from 'react'
 import ComponentCommunication from './ComponentCommunication/Index'
 import styles from './Index.module.css'
 import MouseMoveTo from './MouseMoveTo/Index'
 import ReactingToChanges from './ReactingToChanges/Index'
+
 const GsapPage = () => {
   const boxRef = useRef<HTMLDivElement>(null)
   // 获取节点下的所有子节点

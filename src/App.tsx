@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 // import logo from "./logo.svg";
 import './App.css'
+import FinalProjectStart from './page/FinalProjectStart/Index'
 import GsapPage from './page/Gasp/Index'
 import HomePage from './page/Home/Index'
 function App() {
@@ -67,6 +68,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/gasp' element={<GsapPage />} />
+        <Route path='/project' element={<FinalProjectStart />} />
       </Routes>
     </div>
   )
